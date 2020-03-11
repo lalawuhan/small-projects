@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Poppins", sans-serif;
+    color: #444133;
+}
+p {
+    font-family: "Lato", sans-serif;
+}
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.25em;
+}
+
+.navLogo {
+    margin-right: 10rem;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.navSignUp {
+    margin-left: 3rem;
+    margin-right: -4rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #373630;
+}
+.bestseller-heading {
+    font-size: 3em;
+    padding: 1em 0;
+    margin-left: 0.5em;
+}
+
+.bestseller-product img {
+    max-height: 350px;
+    display: block;
+}
+
+.bestseller-product {
+    background-color: azure;
+    max-width: calc(100% - 450px);
+    border-radius: 40px;
+    max-height: 100%;
+    background-color: #cad2b3eb;
+    padding: 0.5em;
+}
+
+.bestseller-description {
+    background-color: cornflowerblue;
+    border-radius: 32px;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #425946;
+}
+
+.bestseller-description h3 {
+    color: white;
+    font-size: 1em;
+}
+
+.bestseller-description p {
+    color: aliceblue;
+}
+
+.bestseller-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100%);
+    background-color: #eeeeee4a;
+}
+
+.bestseller-product {
+    margin: 0 1rem;
+}
+
+.newcontainer {
+    height: 100%;
+    background-color: #9fa491eb;
+    padding: 3em 1em;
+    margin: 1em 0;
+}
+
+.promoquote {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.promoquote > button {
+    height: 3em;
+    color: white;
+    background-color: #263328;
+    font-weight: 600;
+}
+
+.promoquote > p {
+    font-size: 0.8em;
+    color: #ddd;
+}
+
+.promoquote h1,
+h2,
+h3,
+h4 {
+    color: #2d2b26;
+}
+
+.galleryholder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buyplant > img {
+    max-height: 250px;
+    margin-bottom: 1em;
+}
+
+.buyplant {
+    display: flex;
+    max-width: calc(100% - 450px);
+    flex-direction: column;
+    padding: 1em;
+    max-height: 100%;
+    margin: 0 0.5em;
+    box-shadow: 0 1px 3px rgba(108, 108, 108, 0.01),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.plantcost {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    color: #373737;
+    padding: 1em;
+    margin: ;
+    margin-top: 1em;
+}
+
+.plantcost > p {
+    color: #757575;
+}
