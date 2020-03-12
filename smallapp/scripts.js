@@ -7,17 +7,16 @@ request.onload = function() {
     //accessing json data here
     let data = JSON.parse(this.response);
     if (request.status >= 200 && request.status < 400) {
-        data.forEach(book => {
-            const book = document.createElement("div");
-            book.setAttribute("class", "card");
-
+        data.forEach(item => {
+            console.log(data);
+            let div = document.createElement("div");
+            //book.setAttribute("class", "card");
             const h1 = document.createElement("h1");
-            h1.textContent = book.title;
+            h1.textContent = item.title;
+            console.log(h1);
             const p = document.createElement("p");
-            p.textContent = books.author;
-            container.appendChild(book);
-            book.appendChild(h1);
-            book.appendChild(p);
+            p.textContent = item.author;
+            console.log(p);
         });
     } else {
         const errorMessage = document.createElement("p");

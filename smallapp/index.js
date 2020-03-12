@@ -13,13 +13,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(compression());
 app.use(helmet());
-
+/* 
 const isProduction = process.env.NODE_ENV === "production";
 const origin = {
     origin: isProduction ? "https://thabis-api.herokuapp.com/" : "*"
 };
 app.use(cors(origin));
-
+ */
 //To help protect against brute force/DDoS attacks, we can limit the amount of requests using express-rate-limit.
 const limiter = rateLimit({
     windowsMs: 1 * 60 * 1000, // 1 minute
