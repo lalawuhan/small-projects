@@ -9,14 +9,15 @@ request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
         data.forEach(item => {
             console.log(data);
-            let div = document.createElement("div");
-            //book.setAttribute("class", "card");
-            const h1 = document.createElement("h1");
-            h1.textContent = item.title;
-            console.log(h1);
-            const p = document.createElement("p");
-            p.textContent = item.author;
-            console.log(p);
+            let main = document.getElementById("root");
+            let container = document.getElementById("bookcontainer");
+            const heading = document.createElement("h1");
+            heading.textContent = item.title;
+            const author = document.createElement("p");
+            author.textContent = item.author;
+            container.appendChild(heading);
+            container.appendChild(author);
+            main.appendChild(container);
         });
     } else {
         const errorMessage = document.createElement("p");
